@@ -1,0 +1,44 @@
+{
+  "name": "socketcluster-sample",
+  "description": "A sample SocketCluster app",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Jonathan Gros-Dubois",
+      "email": "grosjona@yahoo.com.au"
+    }
+  ],
+  "dependencies": {
+    "agenda": "^1.0.3",
+    "bcrypt": "^2.0.1",
+    "connect": "3.0.1",
+    "cors": "^2.8.4",
+    "express": "4.14.0",
+    "helmet": "^3.10.0",
+    "minimist": "1.1.0",
+    "moment": "^2.22.1",
+    "mongoose": "^4.9.0",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-unique-validator": "^1.0.6",
+    "morgan": "1.7.0",
+    "sc-errors": "^1.4.0",
+    "sc-framework-health-check": "^2.0.0",
+    "sc-hot-reboot": "^1.0.0",
+    "scc-broker-client": "^2.1.2",
+    "serve-static": "1.11.2",
+    "socketcluster": "^10.0.1",
+    "socketcluster-client": "^10.1.1"
+  },
+  "keywords": [
+    "websocket",
+    "server",
+    "realtime",
+    "cluster",
+    "scalable"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "start": "node server.js",
+    "start:docker": "node dockerwait.js && node ${SOCKETCLUSTER_MASTER_CONTROLLER:-server.js}"
+  }
+}

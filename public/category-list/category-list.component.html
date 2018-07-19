@@ -1,0 +1,6 @@
+<div class="widget_tag_cloud panelBox">
+	<h3 class="widget_title">Categories</h3>
+	<div class="widget_body">
+		<a *ngFor="let category of categories; let i=index" href="javascript:void(0)" [class.active]="curCategory === i" class="fight-filter" (click)="loadCategory(i)">{{ category.name }}</a>
+	</div>
+</div>
